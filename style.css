@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+a {
+  color: black;
+}
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -12,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1vh;
 }
 
 header img {
@@ -160,7 +165,7 @@ header img {
 .yellow-background {
   border: 20vw solid #fffe9b;
   position: absolute;
-  bottom: 0;
+  bottom: 400px;
   right: 0;
   border-radius: 50%;
   transform: translate(50%, 55%);
@@ -169,4 +174,114 @@ header img {
   width: 40vw;
   box-sizing: content-box;
   z-index: -1;
+}
+
+/* ------------------------------- */
+
+/* Rewards */
+
+.rewards-container {
+  display: flex;
+}
+
+.category-list ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 5px;
+}
+
+.category {
+  padding: 1vh 2vh;
+  border: 3px solid #ff6136;
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.selected {
+  background-color: #ff6136;
+}
+
+.rewards-category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rewards-category ul {
+  display: inline-flex;
+  align-items: flex-start;
+  list-style-type: none;
+  gap: 5px;
+}
+
+.chosen {
+  background-color: #24d984;
+}
+
+.type {
+  padding: 1vh 2vh;
+  border: 3px solid #24d984;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.type p {
+  margin: 0;
+}
+.type input {
+  outline: transparent;
+  border: transparent;
+}
+
+.type input::placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+.heart {
+  color: #ff6136;
+}
+
+/* ------------------------------- */
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 411px;
+  background-color: #24d984;
+  border-top: 1vh solid #2efd84;
+  padding: 50px 5%;
+}
+
+.footer-container {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-container ul {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+}
+.footer-container li {
+  margin-bottom: 5px;
+}
+
+.footer-container h2 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer-main-logo {
+  margin-top: 2.5vh;
+  width: 155px;
+  height: 50px;
+}
+
+.footer-sec-img {
+  width: 390px;
+  height: 215px;
 }
