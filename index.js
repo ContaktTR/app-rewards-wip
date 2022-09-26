@@ -11,26 +11,35 @@ entrepriseBtn.addEventListener('click', () => {
 const userSubmitBtn = document.querySelector('.user');
 const entrepriseSubmitBtn = document.querySelector('.company');
 
-let formMod = false;
+userSubmitBtn.addEventListener('click', () => {
+  window.location.href = './accueil-utilisateur.html';
+});
+
+entrepriseSubmitBtn.addEventListener('click', () => {
+  window.location.href = './accueil-entreprise.html';
+});
+
+let entreprise = false;
+console.log(entreprise);
 
 function toggleForms() {
-  formMod = !formMod;
+  entreprise = !entreprise;
   const userForm = document.querySelector('.form-utilisateur');
   const entrepriseForm = document.querySelector('.form-entreprise');
-  if (formMod) {
+  if (entreprise) {
     userForm.style.display = 'none';
     userSubmitBtn.style.display = 'none';
-    userBtn.style.borderBottom = '5px solid #24d984';
+    userBtn.style.borderBottom = '0';
     entrepriseForm.style.display = 'flex';
     entrepriseSubmitBtn.style.display = 'block';
-    entrepriseBtn.style.borderBottom = '0';
+    entrepriseBtn.style.borderBottom = '5px solid #24d984';
   } else {
     entrepriseForm.style.display = 'none';
     entrepriseSubmitBtn.style.display = 'none';
     userForm.style.display = 'flex';
     userSubmitBtn.style.display = 'block';
-    userBtn.style.borderBottom = '0';
-    entrepriseBtn.style.borderBottom = '5px solid #24d984';
+    userBtn.style.borderBottom = '5px solid #24d984';
+    entrepriseBtn.style.borderBottom = '0';
   }
 }
 

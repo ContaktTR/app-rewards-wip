@@ -321,6 +321,10 @@ main {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.utilisateur {
+  border-bottom: 5px solid #24d984;
+}
+
 .selector-connexion p {
   position: relative;
   cursor: pointer;
@@ -422,6 +426,35 @@ main {
 
 .company {
   display: none;
+}
+
+/* ------------------------------- */
+
+/* Accueil Utilisateur */
+
+.maintenance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 60px;
+}
+
+.maintenance-2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 
 /* ------------------------------- */
