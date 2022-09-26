@@ -14,6 +14,10 @@ body {
   min-height: 100vh;
   flex-flow: column nowrap;
   justify-content: space-between;
+  background-image: url('./assets/background-top-left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 
 header {
@@ -25,7 +29,7 @@ header {
 
 header img {
   max-width: 300px;
-  margin: 1vh;
+  margin: 1vh 0;
 }
 
 .nav-container {
@@ -193,6 +197,7 @@ main {
 
 .rewards-container {
   display: flex;
+  align-items: flex-start;
 }
 
 .category-list ul {
@@ -200,6 +205,7 @@ main {
   flex-direction: column;
   list-style-type: none;
   gap: 5px;
+  padding: 0;
 }
 
 .category {
@@ -217,9 +223,11 @@ main {
 .rewards-category {
   display: flex;
   justify-content: space-between;
+  flex-flow: column wrap;
+  width: 100%;
 }
 
-.rewards-category ul {
+.categorys {
   display: inline-flex;
   align-items: flex-start;
   list-style-type: none;
@@ -243,6 +251,7 @@ main {
 .type input {
   outline: transparent;
   border: transparent;
+  background: transparent;
 }
 
 .type input::placeholder {
@@ -251,6 +260,64 @@ main {
 
 .heart {
   color: #ff6136;
+}
+
+.rewards {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.rewards ul {
+  display: inline-grid;
+  flex-wrap: wrap;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.reward {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rewards img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.rewards-desc {
+  font-weight: bold;
+  max-width: 200px;
+}
+
+.rewards span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.green {
+  color: #24d984;
+}
+
+.orange {
+  color: #ff6136;
+}
+
+.pagination {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination span {
+  color: #24d984;
+  font-size: initial;
 }
 
 /* ------------------------------- */
@@ -262,7 +329,6 @@ footer {
   background-color: #24d984;
   border-top: 15px solid #2efd84;
   padding: 50px 5%;
-  margin-top: 100px;
 }
 
 .footer-nav {
