@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,29 +16,60 @@
       src="https://kit.fontawesome.com/cbf8feb3a6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contakt - A toi de voter</title>
+    <title>Contakt - Connexion</title>
   </head>
   <body>
-    <header>
-      <img src="assets/logo.svg" alt="Logo" />
-      <nav>
-        <ul class="nav-container">
-          <li><a href="#" class="nav-btn">Mon compte</a></li>
-          <li><a href="#" class="nav-btn">Mes transactions</a></li>
-          <li>
-            <a href="./html/rewards.html" class="nav-btn">Mes récompenses</a>
-          </li>
-          <li><a href="#" class="nav-btn">A toi de voter !</a></li>
-          <li><a href="#" class="nav-btn-logout">Me déconnecter</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
+    <main>
+      <div class="header-connexion">
+        <img src="../assets/logo.svg" alt="Logo" class="logo-connexion" />
+      </div>
+      <div class="selector-connexion">
+        <p class="utilisateur">Utilisateur</p>
+        <p class="entreprise">Entreprise</p>
+      </div>
+      <h1 class="title">Connexion</h1>
+      <form class="form-utilisateur">
+        <div class="form-inputs">
+          <input type="text" placeholder="Adresse mail" />
+        </div>
+        <div class="form-inputs">
+          <input type="password" placeholder="Mot de passe" />
+          <img
+            src="../assets/icon-eye-close.svg"
+            alt="eye close"
+            class="eye-user"
+          />
+        </div>
+      </form>
+      <form class="form-entreprise">
+        <div class="form-inputs">
+          <input type="text" placeholder="Adresse mail" />
+        </div>
+        <div class="form-inputs">
+          <input type="password" placeholder="Mot de passe" />
+          <img
+            src="../assets/icon-eye-close.svg"
+            alt="eye close"
+            class="eye-entreprise"
+          />
+        </div>
+      </form>
+      <p class="forgot">
+        Mot de passe oublié ?
+        <a href="#" class="forgot-link">Réinitialiser</a>
+      </p>
+      <button class="connexion-btn user" type="submit">Se connecter</button>
+      <button class="connexion-btn company" type="submit">Se connecter</button>
+      <p class="register">
+        Pas de compte ?
+        <a href="#" class="register-link">S'inscrire</a>
+      </p>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-nav">
           <img
-            src="./assets/logo_white.svg"
+            src="../assets/logo_white.svg"
             alt="contakt-logo-blanc"
             class="footer-main-logo"
           />
@@ -85,7 +116,7 @@
             </li>
           </ul>
           <img
-            src="./assets/ecolabel-footer.svg"
+            src="../assets/ecolabel-footer.svg"
             alt="footer-labels"
             class="footer-sec-img"
           />
@@ -101,4 +132,5 @@
       </div>
     </footer>
   </body>
+  <script src="../index.js"></script>
 </html>

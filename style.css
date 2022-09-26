@@ -20,6 +20,8 @@ body {
   background-position: right;
 }
 
+/* Header base */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -85,6 +87,8 @@ main {
   margin: 0 auto;
   width: 100%;
 }
+
+/* ------------------------------- */
 
 .main-paragrapher {
   font-family: 'Roboto', sans-serif;
@@ -294,6 +298,130 @@ main {
 .pagination span {
   color: #24d984;
   font-size: initial;
+}
+
+/* ------------------------------- */
+
+/* Connexion */
+
+.header-connexion {
+  padding: 4vh 0;
+  text-align: center;
+}
+
+.logo-connexion {
+  width: 150px;
+}
+
+.selector-connexion {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.selector-connexion p {
+  position: relative;
+  cursor: pointer;
+}
+
+.selector-connexion p:before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0px;
+  background-color: #24d984;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.selector-connexion p:hover:before {
+  width: 100%;
+}
+
+.title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+}
+
+.form-utilisateur,
+.form-entreprise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  gap: 50px;
+}
+
+.form-entreprise {
+  display: none;
+}
+
+.form-inputs {
+  display: flex;
+  background-color: white;
+  padding: 0.5vh 1vh;
+  border: 5px solid #24d984;
+  border-radius: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-inputs input {
+  width: 100%;
+  padding: 0.5vh 1vh;
+  border: transparent;
+  outline: transparent;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+}
+
+.form-inputs img {
+  width: 32px;
+}
+
+.register {
+  margin-bottom: 100px;
+}
+
+.forgot {
+  margin-top: 50px;
+}
+
+.forgot,
+.register {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.forgot a,
+.register a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.connexion-btn {
+  background-color: #24d984;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 13px 8px;
+  border-radius: 30px;
+  font-weight: 900;
+  font-size: 15px;
+  border: transparent;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 50px auto;
+}
+
+.company {
+  display: none;
 }
 
 /* ------------------------------- */
