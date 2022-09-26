@@ -167,31 +167,6 @@ main {
   border: transparent;
 }
 
-.yellow-container {
-  overflow: hidden;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  z-index: -1;
-}
-
-.yellow-background {
-  border: 20vw solid #fffe9b;
-  position: absolute;
-  bottom: 400px;
-  right: 0;
-  border-radius: 50%;
-  transform: translate(50%, 55%);
-  background-color: white;
-  height: 40vw;
-  width: 40vw;
-  box-sizing: content-box;
-  z-index: -1;
-}
-
 /* ------------------------------- */
 
 /* Rewards */
