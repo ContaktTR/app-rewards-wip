@@ -29,7 +29,7 @@ function toggleForms() {
   if (entreprise) {
     userForm.style.display = 'none';
     userSubmitBtn.style.display = 'none';
-    userBtn.style.borderBottom = '0';
+    userBtn.style.borderBottom = '5px solid transparent';
     entrepriseForm.style.display = 'flex';
     entrepriseSubmitBtn.style.display = 'block';
     entrepriseBtn.style.borderBottom = '5px solid #24d984';
@@ -39,7 +39,7 @@ function toggleForms() {
     userForm.style.display = 'flex';
     userSubmitBtn.style.display = 'block';
     userBtn.style.borderBottom = '5px solid #24d984';
-    entrepriseBtn.style.borderBottom = '0';
+    entrepriseBtn.style.borderBottom = '5px solid transparent';
   }
 }
 

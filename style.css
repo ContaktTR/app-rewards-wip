@@ -325,6 +325,10 @@ main {
   border-bottom: 5px solid #24d984;
 }
 
+.entreprise {
+  border-bottom: 5px solid transparent;
+}
+
 .selector-connexion p {
   position: relative;
   cursor: pointer;
