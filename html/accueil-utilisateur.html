@@ -19,7 +19,7 @@
     <title>Contakt - Accueil utilisateur</title>
   </head>
   <body>
-    <main>
+    <main class="max-l">
       <div class="header-connexion-utilisateur">
         <img src="../assets/logo.svg" alt="Logo Contakt" />
         <nav>
@@ -32,117 +32,180 @@
           </ul>
         </nav>
       </div>
-      <section class="card-container">
-        <div class="card-left">
-          <div class="card-infos">
-            <div class="card-heading">
-              <button type="button" class="card-status">Active</button>
-              <img src="../assets/card.png" alt="Card" />
-              <p>n°8000711859</p>
-            </div>
-            <div class="card-face">
-              <p>
-                <span>recto</span>
-                /
-                <span> verso</span>
-              </p>
-            </div>
-            <div class="card-person">
-              <span class="card-name">MARTINEZ SYLVAIN</span>
-              <span class="person-entreprise">GROUPE SACLIAN</span>
-            </div>
-            <div class="card-balance">
-              <div class="balance-left">
-                <p>Solde aujourd'hui</p>
-                <span>38,00€</span>
+      <section class="card-bg">
+        <div class="card-container">
+          <div class="card-left">
+            <div class="card-infos">
+              <div class="card-heading">
+                <button type="button" class="card-status">Active</button>
+                <img src="../assets/card.png" alt="Card" />
+                <p>n°8000711859</p>
               </div>
-              <div class="balance-middle">
-                <div class="line"></div>
-                <div class="ball"></div>
+              <div class="card-face">
+                <p>
+                  <span>recto</span>
+                  /
+                  <span> verso</span>
+                </p>
               </div>
-              <div class="balance-right">
-                <p>Solde sur ma carte</p>
-                <span>125.56€</span>
+              <div class="card-person">
+                <span class="card-name">MARTINEZ SYLVAIN</span>
+                <span class="person-entreprise">GROUPE SACLIAN</span>
               </div>
+              <div class="card-balance">
+                <div class="balance-left">
+                  <p>Solde aujourd'hui</p>
+                  <span>38,00€</span>
+                </div>
+                <div class="balance-middle">
+                  <div class="line"></div>
+                  <div class="ball"></div>
+                </div>
+                <div class="balance-right">
+                  <p>Solde sur ma carte</p>
+                  <span>125.56€</span>
+                </div>
+              </div>
+              <button class="card-modify">Modifier mes informations</button>
             </div>
-            <button class="card-modify">Modifier mes informations</button>
+            <div class="card-buttons">
+              <ul>
+                <li>Récupération code PIN</li>
+                <li>Mise en opposition</li>
+                <li>Supprimer ma carte</li>
+              </ul>
+            </div>
           </div>
-          <div class="card-buttons">
-            <ul>
-              <li>Récupération code PIN</li>
-              <li>Mise en opposition</li>
-              <li>Supprimer ma carte</li>
-            </ul>
+          <div class="card-right">
+            <div class="transaction-nav">
+              <ul>
+                <li class="nav-btn">Transactions</li>
+                <li class="nav-btn">Où l'utiliser ?</li>
+                <li class="nav-btn">Aide</li>
+              </ul>
+            </div>
+            <div class="transaction-title">
+              <h1>Transactions</h1>
+              <button class="transaction-download">Télécharger</button>
+            </div>
+            <div class="transaction-types">
+              <ul>
+                <li>Tout</li>
+                <li>Crédits</li>
+                <li>Débits</li>
+                <li>Refus</li>
+              </ul>
+            </div>
+            <div class="transaction-list">
+              <ul>
+                <li>
+                  <div class="transaction">
+                    <p>
+                      GROUPE SCALIAN
+                      <span>01.10.21</span>
+                    </p>
+                    <span class="up">168.00€</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="transaction">
+                    <p>
+                      SAS BIARMOUT
+                      <span>27.09.21</span>
+                    </p>
+                    <span>-35.90€</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="transaction">
+                    <p>
+                      SAS BIARMOUT
+                      <span>25.09.21</span>
+                    </p>
+                    <span>-36.90€</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="transaction">
+                    <p>
+                      LE CAMPERO
+                      <span>10.09.21</span>
+                    </p>
+                    <span class="down">-9.70€</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="transaction">
+                    <p>
+                      MME LORELLE MARIE
+                      <span>30.08.21</span>
+                    </p>
+                    <span>-10.00€</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="card-right">
-          <div class="transaction-nav">
-            <ul>
-              <li class="nav-btn">Transactions</li>
-              <li class="nav-btn">Où l'utiliser ?</li>
-              <li class="nav-btn">Aide</li>
-            </ul>
+      </section>
+      <section class="map-container" id="where">
+        <div class="where-description">
+          <h1>Où utiliser Contakt</h1>
+          <h2>On a sélectionné minutieusement nos partenaires.</h2>
+          <p>
+            Ils ont de super produits et de belles expériences à vos proposer.
+            Voici comment les trouver. A vous de les choisir !
+          </p>
+        </div>
+        <div class="where-map">
+          <div class="where-container">
+            <div class="where-input">
+              <input
+                type="search"
+                class="where-search"
+                placeholder="Rechercher par: Ville, végétarien, écotables..."
+              />
+            </div>
+            <div class="where-results">
+              <ul>
+                <li>
+                  <div class="result">
+                    <img src="../assets/photo-rustic.jpg" alt="Photo Rustic" />
+                    <div class="result-infos">
+                      <p>
+                        Rustic is the new chic
+                        <span>Cultiver son talent à Dinan</span>
+                      </p>
+                      <span class="green">Fr, Dinan</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="result">
+                    <img
+                      src="../assets/photo-creperie.jpg"
+                      alt="Photo Creperie"
+                    />
+                    <div class="result-infos">
+                      <p>
+                        Crêperie de l'Ancienne Poste
+                        <span>La Bretagne par correspondance</span>
+                      </p>
+                      <span class="green">Fr, Bourg-la-Reine</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="where-more">Voir plus de partenaires</a>
           </div>
-          <div class="transaction-title">
-            <h1>Transactions</h1>
-            <button class="transaction-download">Télécharger</button>
-          </div>
-          <div class="transaction-types">
-            <ul>
-              <li>Tout</li>
-              <li>Crédits</li>
-              <li>Débits</li>
-              <li>Refus</li>
-            </ul>
-          </div>
-          <div class="transaction-list">
-            <ul>
-              <li>
-                <div class="transaction">
-                  <p>
-                    GROUPE SCALIAN
-                    <span>01.10.21</span>
-                  </p>
-                  <span class="up">168.00€</span>
-                </div>
-              </li>
-              <li>
-                <div class="transaction">
-                  <p>
-                    SAS BIARMOUT
-                    <span>27.09.21</span>
-                  </p>
-                  <span>-35.90€</span>
-                </div>
-              </li>
-              <li>
-                <div class="transaction">
-                  <p>
-                    SAS BIARMOUT
-                    <span>25.09.21</span>
-                  </p>
-                  <span>-36.90€</span>
-                </div>
-              </li>
-              <li>
-                <div class="transaction">
-                  <p>
-                    LE CAMPERO
-                    <span>10.09.21</span>
-                  </p>
-                  <span class="down">-9.70€</span>
-                </div>
-              </li>
-              <li>
-                <div class="transaction">
-                  <p>
-                    MME LORELLE MARIE
-                    <span>30.08.21</span>
-                  </p>
-                  <span>-10.00€</span>
-                </div>
-              </li>
-            </ul>
+          <div class="map">
+            <img src="../assets/contakt-map.png" alt="Contakt map" />
+            <span class="pin-1"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="pin-2"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="pin-3"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="pin-4"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="pin-5"><i class="fas fa-map-marker-alt"></i></span>
           </div>
         </div>
       </section>

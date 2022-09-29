@@ -14,10 +14,6 @@ body {
   min-height: 100vh;
   flex-flow: column nowrap;
   justify-content: space-between;
-  background-image: url('./assets/background-top-left.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
 }
 
 /* Header base */
@@ -436,11 +432,17 @@ main {
 
 /* Accueil Utilisateur */
 
+.max-l {
+  max-width: initial;
+}
+
 .header-connexion-utilisateur {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2vh 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header-connexion-utilisateur img {
@@ -484,7 +486,16 @@ main {
 
 .card-container {
   display: flex;
-  margin-top: 150px;
+  max-width: 1440px;
+  margin: 150px auto;
+}
+
+.card-bg {
+  background-image: url('./assets/background-top-left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 100vh;
 }
 
 .card-infos {
@@ -775,6 +786,145 @@ main {
 .down {
   color: #ff6136;
   text-decoration: line-through;
+}
+
+.map-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+.where-description {
+  max-width: 550px;
+}
+
+.where-description h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.where-description h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.where-description p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.where-container {
+  max-width: 500px;
+  text-align: right;
+}
+
+.where-search {
+  width: 100%;
+  border-radius: 30px;
+  padding: 1vh;
+  background-color: #f5f5f5;
+  border: transparent;
+  outline: transparent;
+}
+
+.where-search::placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+.where-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.result-infos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+.result-infos p {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  text-align: left;
+}
+
+.result-infos p span {
+  font-family: 'Roboto', sans-serif;
+}
+
+.result-infos span {
+  font-family: 'Roboto', sans-serif;
+}
+
+.where-map {
+  display: inline-flex;
+  margin-bottom: 2vh;
+  gap: 40px;
+}
+
+.where-more {
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.map {
+  position: relative;
+}
+
+.map img {
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.pin-1,
+.pin-2,
+.pin-3,
+.pin-4,
+.pin-5 {
+  font-size: 30px;
+  color: #24d984;
+}
+
+.pin-1 {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+}
+.pin-2 {
+  position: absolute;
+  top: 35%;
+  right: 15%;
+}
+.pin-3 {
+  position: absolute;
+  top: 45%;
+  left: 27%;
+}
+.pin-4 {
+  position: absolute;
+  top: 50%;
+  right: 35%;
+}
+.pin-5 {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 25%;
 }
 
 /* ------------------------------- */
