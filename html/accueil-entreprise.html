@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,169 @@
     <title>Contakt - Accueil entreprise</title>
   </head>
   <body>
-    <main></main>
+    <main class="max-l">
+      <div class="header-connexion-utilisateur">
+        <img src="../assets/logo.svg" alt="Logo Contakt" />
+        <nav class="nav-entreprise">
+          <ul class="user-accueil">
+            <li><a href="#" class="nav-btn">Pourquoi choisir Contakt ?</a></li>
+            <li><a href="#" class="nav-btn">Comment ça Contakt ?</a></li>
+            <li><a href="#" class="nav-btn">Où utiliser Contakt ?</a></li>
+
+          </ul>
+          <ul>
+            <li></li><a href="#" class="nav-btn-logout-user">Me déconnecter</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="entreprise-bg">
+        <div class="yellow-container">
+          <div class="yellow-background-up-accueil-entreprise"></div>
+        </div>
+        <div class="entreprise-container">
+          <div class="entreprise-left">
+            <div class="entreprise-infos">
+              <div class="entreprise-heading">
+                <p>n° SIRET: 8000711859</p>
+              </div>
+              <div class="entreprise-person">
+                <span class="entreprise-name">ECTO</span>
+                <span class="person-entreprise">GROUPE COM</span>
+              </div>
+              <div class="entreprise-stats">
+                <div class="card-employees">
+                  <span>19</span>
+                  <br />
+                  <p>Nombre d'employés</p>
+                </div>
+                <div class="cards-activated">
+                  <span>15</span>
+                  <br />
+                  <p>Nombre de cartes <br /> activées</p>
+                </div>
+              </div>
+              <button class="entreprise-modify">Modifier mes informations</button>
+            </div>
+          </div>
+          <div class="entreprise-right">
+            <div class="member-nav">
+              <ul>
+                <li class="nav-btn">Liste des employés</li>
+                <li class="nav-btn">Recharge mensuelle</li>
+                <li class="nav-btn">
+                  <a href="./rewards.html">Mes récompenses</a>
+                </li>
+                <li class="nav-btn">
+                  <a href="../index.html">A toi de voter</a>
+                </li>
+                <li class="nav-btn">Aide</li>
+              </ul>
+            </div>
+            <div class="members">
+              <div class="member-title">
+                <h1>Liste des employés</h1>
+                <button class="member-btn">Supprimer un employé</button>
+                <button class="member-btn">Ajouter un employé</button>
+              </div>           
+              <div class="member-list">
+                <ul>
+                  <li>
+                    <div class="member">
+                      <p>
+                        CHAUVET Michèle
+                        <span>Card ID 283485008754637</span>
+                      </p>
+                      <button class="member-btn">Actif</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="member">
+                      <p>
+                        L'AMARRE VICTOR
+                        <span>Card ID 2610550680630</span>
+                      </p>
+                      <button class="member-btn">Actif</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="member">
+                      <p>
+                        DUBOIS AGNES
+                        <span>Card ID 7397023789843</span>
+                      </p>
+                      <button class="member-btn">Actif</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="member">
+                      <p>
+                        COUTURIER SIMON
+                        <span>Card ID 2246550687830</span>
+                      </p>
+                      <button class="member-btn off">Inactif</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="member">
+                      <p>
+                        DUPONT MARIE
+                        <span>Card ID 2246550687830</span>
+                      </p>
+                      <button class="member-btn">Actif</button>
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="member-more">Voir tous les employés</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recharge-info">
+        <h1>Recharge mensuel</h1>
+        <h2>Toute déclaration de rechargement mensuelle doit être effectuée au plus tard l'avant dernier jour ouvré du mois</h2>
+        <button class="recharge-btn">Recharger</button>
+      </section>
+      <section class="need-help-special">
+        <div class="yellow-container">
+          <div class="yellow-background-down-accueil-entreprise"></div>
+        </div>
+        <div class="help-special-title">
+          <img src="../assets/oksign-icon-contakt.svg" alt="grip icon" />
+          <h1>Besoin d'aide ?</h1>
+        </div>
+        <div class="help-special-subjects">
+          <div class="subject">
+            <img src="../assets/help-icon-time.svg" alt="help icon time" />
+            <h2>Durée de validité</h2>
+          </div>
+          <div class="subject">
+            <img src="../assets/help-icon-terms.svg" alt="help icon terms" />
+            <h2>Conditions d'utilisation</h2>
+          </div>
+          <div class="subject">
+            <img src="../assets/help-icon-amount.svg" alt="help icon amount" />
+            <h2>Solde / Transactions</h2>
+          </div>
+          <div class="subject">
+            <img src="../assets/help-icon-locked.svg" alt="help icon locked" />
+            <h2>Compte bloqué</h2>
+          </div>
+          <div class="subject">
+            <img src="../assets/help-icon-refund.svg" alt="help icon refund" />
+            <h2>Echange / Remboursement</h2>
+          </div>
+          <div class="subject">
+            <img src="../assets/help-icon-use.svg" alt="help icon use" />
+            <h2>Première utilisation</h2>
+          </div>
+          <div class="subject last">
+            <img src="../assets/help-icon-lost.svg" alt="help icon lost" />
+            <h2>Carte volée / perdue</h2>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-nav">
@@ -60,14 +222,14 @@
           <ul>
             <li>
               <h2>
-                <a href="#">Se connecter</a>
+                <a href="../html/connexion-form.html">Se connecter</a>
               </h2>
             </li>
             <li>
-              <a href="#">Entreprise</a>
+              <a href="../html/connexion-form.html">Entreprise</a>
             </li>
             <li>
-              <a href="#">Utilisateur</a>
+              <a href="../html/connexion-form.html">Utilisateur</a>
             </li>
           </ul>
           <img

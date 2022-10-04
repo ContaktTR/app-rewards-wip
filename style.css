@@ -384,6 +384,7 @@ main {
   outline: transparent;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 900;
+  font-size: 20px;
 }
 
 .form-inputs img {
@@ -488,14 +489,6 @@ main {
   display: flex;
   max-width: 1440px;
   margin: 150px auto;
-}
-
-.card-bg {
-  background-image: url('./assets/background-top-left.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  height: 80vh;
 }
 
 .card-infos {
@@ -1020,29 +1013,412 @@ main {
 
 /* Accueil Entreprise */
 
-.maintenance {
+.nav-entreprise {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.nav-entreprise ul {
+  padding: 0;
+  list-style: none;
+}
+
+.entreprise-container {
+  display: flex;
+  max-width: 1440px;
+  margin: 150px auto;
+}
+
+.entreprise-left {
+  flex-shrink: 0;
+}
+
+.entreprise-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.entreprise-infos {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 60px;
-}
-
-.maintenance-2 {
+  background-color: #fffeea;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
+  border-radius: 30px;
+  position: relative;
 }
 
-.chat {
+.entreprise-heading {
+  display: flex;
+  align-items: center;
+  padding: 2vh 1.5vh 0;
+  gap: 30px;
+}
+
+.entreprise-heading button {
+  padding: 0.5vh 3vh;
+  background-color: #24d984;
+  border: transparent;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.entreprise-heading img {
+  width: 150px;
+  margin-top: -100px;
+}
+
+.entreprise-person {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.entreprise-name {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.entreprise-stats {
+  width: 100%;
+  padding: 2vh 1.5vh;
+}
+
+.card-employees,
+.cards-activated {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.card-employees p,
+.cards-activated p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.card-employees span,
+.cards-activated span {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #24d984;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.balance-middle {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 2vh;
+  position: relative;
+}
+
+.entreprise-modify {
+  padding: 1vh 2vh;
+  background-color: #ff6136;
+  border-radius: 30px;
+  outline: transparent;
+  border: transparent;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5vh;
+  cursor: pointer;
+}
+
+.entreprise-right {
+  width: 100%;
+  margin: -80px 0 0 8%;
+}
+
+.members {
+  max-width: 800px;
+  width: 100%;
+}
+
+.member-nav {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.member-nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+}
+
+.member-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.member-title h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.member-btn {
+  padding: 0.5vh 1vh;
+  background-color: #24d984;
+  border: transparent;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.off {
+  background-color: #fff;
+  border: 1px solid #24d984;
+}
+
+.member-list {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 550px;
+  width: 100%;
+  gap: 40px;
+}
+
+.member-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.member {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.member p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 3vh 0;
+}
+
+.member p span {
+  font-family: 'Roboto', sans-serif;
+}
+
+.member span {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.member-more {
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: right;
+  font-size: 20px;
+}
+
+.recharge-info {
+  background-color: #fffeea;
+  width: 100%;
+  padding: 15vh 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.chat-img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
+.recharge-info h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.recharge-info h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  max-width: 50%;
+}
+
+.recharge-btn {
+  padding: 1vh 5vh;
+  background-color: #24d984;
+  border: transparent;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.need-help-special {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5vh;
+}
+
+.help-special-title {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 8vh;
+}
+
+.help-special-title img {
+  margin-top: -125px;
+  width: 250px;
+}
+
+.help-special-title h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.help-special-buttons ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.help-special-buttons li {
+  background-color: #24d984;
+  padding: 1vh 2vh;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 30px;
+  text-align: center;
+  margin: 2vh 0;
+  min-width: 250px;
+}
+
+.help-special-subjects {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 5vh;
+}
+
+.yellow-container {
+  overflow: hidden;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.yellow-background-index {
+  border: 25vw solid #fffe9b;
+  position: absolute;
+  bottom: 400px;
+  top: initial;
+  right: 0;
+  border-radius: 50%;
+  transform: translate(50%, 60%);
+  background-color: white;
+  height: 50vw;
+  width: 60vw;
+  box-sizing: content-box;
+  z-index: -1;
+}
+
+.yellow-background-rewards {
+  border: 25vw solid #fffe9b;
+  position: absolute;
+  bottom: 400px;
+  top: initial;
+  right: 0;
+  border-radius: 50%;
+  transform: translate(50%, 60%);
+  background-color: white;
+  height: 50vw;
+  width: 60vw;
+  box-sizing: content-box;
+  z-index: -1;
+}
+
+.yellow-background-connexion {
+  border: 25vw solid #fffe9b;
+  position: absolute;
+  bottom: 400px;
+  top: initial;
+  right: 0;
+  border-radius: 50%;
+  transform: translate(50%, 60%);
+  background-color: white;
+  height: 50vw;
+  width: 60vw;
+  box-sizing: content-box;
+  z-index: -1;
+}
+
+.yellow-background-accueil-utilisateur {
+  border: 25vw solid #fffe9b;
+  position: absolute;
+  bottom: 400px;
+  top: initial;
+  right: 0;
+  border-radius: 50%;
+  transform: translate(50%, 60%);
+  background-color: white;
+  height: 50vw;
+  width: 60vw;
+  box-sizing: content-box;
+  z-index: -1;
+}
+
+.yellow-background-up-accueil-entreprise {
+  border: 25vw solid #fffe9b;
+  position: absolute;
+  bottom: 400px;
+  top: initial;
+  right: 0;
+  border-radius: 50%;
+  transform: translate(50%, 60%);
+  background-color: white;
+  height: 50vw;
+  width: 60vw;
+  box-sizing: content-box;
+  z-index: -1;
+}
+
+.yellow-background-down-accueil-entreprise {
+  border: 25vw solid #fffe9b;
+  position: absolute;
+  bottom: 400px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: translate(-40%, -60%);
+  background-color: white;
+  height: 50vw;
+  width: 60vw;
+  box-sizing: content-box;
+  z-index: -1;
 }
 
 /* ------------------------------- */
