@@ -791,7 +791,7 @@ main {
 .map-container {
   max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 5vh;
+  margin-bottom: 15vh;
 }
 
 .where-description {
@@ -858,10 +858,12 @@ main {
   font-family: 'Nunito Sans', sans-serif;
   margin: 0;
   text-align: left;
+  font-size: 20px;
 }
 
 .result-infos p span {
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 .result-infos span {
@@ -885,7 +887,7 @@ main {
 }
 
 .map img {
-  width: 600px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
@@ -925,6 +927,93 @@ main {
   left: 50%;
   right: 50%;
   bottom: 25%;
+}
+
+.need-help {
+  background-color: #fffeea;
+  width: 100%;
+}
+
+.help-title {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.help-title img {
+  margin-top: -125px;
+  width: 250px;
+}
+
+.help-title h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.help-buttons ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.help-buttons li {
+  background-color: #24d984;
+  padding: 1vh 2vh;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 30px;
+  text-align: center;
+  margin: 2vh 0;
+  min-width: 250px;
+}
+
+.help-subjects {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 5vh;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subject img {
+  width: 100px;
+}
+
+.subject h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  position: relative;
+}
+
+.subject h2:before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #24d984;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.last {
+  grid-column: 1 / 4;
 }
 
 /* ------------------------------- */
