@@ -44,6 +44,7 @@ header img {
   color: black;
   transition: all 0.2s ease-in-out;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-btn:before {
@@ -423,6 +424,7 @@ main {
   max-width: 200px;
   display: block;
   margin: 50px auto;
+  cursor: pointer;
 }
 
 .company {
@@ -534,6 +536,7 @@ main {
 .card-face p span {
   transition: all 0.2s ease-in-out;
   position: relative;
+  cursor: pointer;
 }
 
 .card-face p span:before {
@@ -642,6 +645,7 @@ main {
   font-size: 18px;
   color: white;
   margin-bottom: 5vh;
+  cursor: pointer;
 }
 
 .card-buttons {
@@ -664,6 +668,7 @@ main {
   border-radius: 30px;
   text-align: center;
   margin: 2vh 0;
+  cursor: pointer;
 }
 
 .card-right {
@@ -706,6 +711,7 @@ main {
   font-weight: 900;
   font-size: 15px;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .transaction-types {
@@ -720,8 +726,10 @@ main {
   padding: 0;
   gap: 40px;
 }
+
 .transaction-types li {
   position: relative;
+  cursor: pointer;
 }
 
 .transaction-types li:before {
@@ -1263,6 +1271,7 @@ main {
   font-weight: 900;
   font-size: 18px;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .need-help-special {
@@ -1368,7 +1377,7 @@ main {
   top: initial;
   right: 0;
   border-radius: 50%;
-  transform: translate(50%, 60%);
+  transform: translate(50%, 67%);
   background-color: white;
   height: 50vw;
   width: 60vw;
@@ -1383,7 +1392,7 @@ main {
   top: initial;
   right: 0;
   border-radius: 50%;
-  transform: translate(50%, 60%);
+  transform: translate(50%, 70%);
   background-color: white;
   height: 50vw;
   width: 60vw;
@@ -1398,7 +1407,7 @@ main {
   top: initial;
   right: 0;
   border-radius: 50%;
-  transform: translate(50%, 60%);
+  transform: translate(50%, 66%);
   background-color: white;
   height: 50vw;
   width: 60vw;
